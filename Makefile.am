@@ -69,7 +69,8 @@ $(PREFIX1).automorf-untrimmed.hfst: $(AP_SRC1)/$(LANG1).automorf.hfst
 	cp -v $< $@
 
 $(PREFIX1).automorf.hfst: .deps/$(LANG1).automorf.hfst .deps/$(PREFIX1).autobil.prefixes
-	hfst-compose-intersect -1 .deps/$(LANG1).automorf.hfst -2 .deps/$(PREFIX1).autobil.prefixes -o $@
+	hfst-compose-intersect -1 .deps/$(LANG1).automorf.hfst -2 .deps/$(PREFIX1).autobil.prefixes |\
+		hfst-fst2fst -f olw -o $@
 
 # -------------------
 # Finnish generation:
