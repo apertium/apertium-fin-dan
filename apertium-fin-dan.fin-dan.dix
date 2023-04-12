@@ -95,15 +95,15 @@
     <sdef n="compound-R"      c="May be the right-side of a compound, or a full word"/>
   </sdefs>
 
-   <section id="main" type="standard">
-      <!-- Define entries within <e> here. -->
-      <!-- example:
-           <e><p><l>house<s n="n"/></l><r>casa<s n="n"/><s n="f"/></r></p></e>
-      -->
+  <section id="main" type="standard">
 
-      <e><re>[.\?;:!…¿¶]</re><p><l><s n="sent"/></l><r><s n="sent"/></r></p></e>
-      <e><re>,</re>          <p><l><s n="cm"/></l>  <r><s n="cm"/></r></p></e>
-   </section>
+    <!-- nouns -->
+
+    <e><p><l>talo<s n="n"/></l><r>hus<s n="n"/><s n="nt"/></r></p></e>
+
+    <e><re>[.\?;:!…¿¶]</re><p><l><s n="sent"/></l><r><s n="sent"/></r></p></e>
+    <e><re>,</re>          <p><l><s n="cm"/></l>  <r><s n="cm"/></r></p></e>
+  </section>
 </dictionary>
 
 <!--
